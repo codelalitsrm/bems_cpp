@@ -413,7 +413,7 @@ void Update()
                     case 8:
                         break;
 
-                    default: printf("\nIncorrect Choice............Try Again....!\n"); break;
+                    default: printf("\nInvalid Choice!\n"); break;
                 }
                 if(ch!=8)
                 {
@@ -456,7 +456,7 @@ void Update()
         }
         else
         {
-            printf("\nThe Eployee ID is not found........Try Again.........!\n");
+            printf("\nOops, the employee ID not found........Try Again.........!\n");
         }
     }
 }
