@@ -114,7 +114,37 @@ void login()
 }
 
 
+void main_menu()
+{
 
+    int ch;
+    do
+    {
+        printf("\n\n\n");
+        printf("~~~~~~  Main Menu  ~~~~~~\n\n");
+        printf("\n1. Add New Employee Record\n\n2. Display All Records\n\n3. Search Specific Employee Record\n\n4. Update Employee Record\n\n5. Delete Employee Record\n\n6. Exit The Program \n\n\nEnter your Choice : ");
+        scanf("%d", &ch);
+        printf("\n\n\n");
+
+        switch (ch)
+        {
+        case 1:Insert();
+            break;
+        case 2:Display();
+            break;
+        case 3:Search();
+            break;
+        case 4:Update();
+            break;
+        case 5:Delete();
+            break;
+        case 6:
+            end();
+        default:
+            printf("\nIncorrect Choice !!!\nTry Again...!\n");
+        }
+    } while (ch != 6);
+}
 
 
 
